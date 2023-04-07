@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class NonameConfig(AppConfig):
+class CoreConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
-    name = "noname"
+    name = "core"
