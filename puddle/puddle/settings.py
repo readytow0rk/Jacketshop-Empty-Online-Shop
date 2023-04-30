@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'dashboard',
     'item',
     'errorpage',
+    'media',
 ]
 
 MIDDLEWARE = [
