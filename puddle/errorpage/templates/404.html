@@ -1,9 +1,9 @@
-<html>
+{% extends 'core/base.html' %}
 
-<body>
-    <h1>Page not Found</h1>
-    <img src="../templates/media/michael-dziedzic-0W4XLGITrHg-unsplash-min-min (1) (1).jpg" alt=" error photo ">
-</body>
+{% block title %}Welcome{% endblock %}
 
-</html>
-
+{% block content %}
+    <div class="mt-6 px-6 py-12 bg-gray-100 rounded-xl">
+        <h2 class="mb-12 text-2xl text-center">OOPS... <br><br>  Page doesn't exist</h2>
+</div>
+{% endblock %}
