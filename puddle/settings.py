@@ -1,4 +1,7 @@
-
+ import os
+ import dj_database_url
+ if os.path.isfile('env.py'):
+     import env
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -9,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-j4ippt+3h39u4ontllpc8a(4h&^god(7aicz#@q^sl_(w)2otp'
+ SECRET_KEY = os.environ.get('django-insecure-j4ippt+3h39u4ontllpc8a(5h&^god(7aicz#@q^sl_(w)2otp')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
