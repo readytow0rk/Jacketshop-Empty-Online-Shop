@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-j4ippt+3h39u4ontllpc8a(4h&^god(7aicz#@q^sl_(w)2otp
 DEBUG = False
 # DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['jacketshop.herokuapp.com']
 # ALLOWED_HOSTS = ['*']
 
 LOGIN_URL = '/login/'
