@@ -14,6 +14,7 @@ SECRET_KEY = 'django-insecure-j4ippt+3h39u4ontllpc8a(4h&^god(7aicz#@q^sl_(w)2otp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 # DEBUG = False
+heroku config:set DISABLE_COLLECTSTATIC=1
 
 ALLOWED_HOSTS = ['jacketshop.herokuapp.com']
 # ALLOWED_HOSTS = ['*']
