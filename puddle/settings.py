@@ -20,7 +20,7 @@ DEBUG = False
 # heroku config:set DISABLE_COLLECTSTATIC=1
 
 ALLOWED_HOSTS = ['*']
-# ALLOWED_HOSTS = ['*']
+# ALLOWED_HOSTS = ['*'] jacketshop.heroku.com
 
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
