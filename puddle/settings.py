@@ -1,8 +1,9 @@
+from pathlib import Path
 import os
 import dj_database_url
+from django.contrib.messages import constants as messages
 if os.path.isfile('env.py'):
     import env
-from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,7 +24,7 @@ DEBUG = False
 # DEBUG = False
 # heroku config:set DISABLE_COLLECTSTATIC=1
 
-ALLOWED_HOSTS = ['jacketshop.herokuapp.com']
+ALLOWED_HOSTS = ['jacketshop.herokuapp.com', 'localhost']
 # ALLOWED_HOSTS = ['jacketshop.heroku.com']
 # ALLOWED_HOSTS = ['*'] jacketshop.heroku.com
 
