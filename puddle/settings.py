@@ -7,6 +7,8 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# export PATH="$PATH:/usr/bin/python3"
+# /usr/bin/python3
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -21,7 +23,8 @@ DEBUG = False
 # DEBUG = False
 # heroku config:set DISABLE_COLLECTSTATIC=1
 
-ALLOWED_HOSTS = ['jacketshop.heroku.com']
+ALLOWED_HOSTS = ['jacketshop.heroku.com', '*']
+# ALLOWED_HOSTS = ['jacketshop.heroku.com']
 # ALLOWED_HOSTS = ['*'] jacketshop.heroku.com
 
 LOGIN_URL = '/login/'
