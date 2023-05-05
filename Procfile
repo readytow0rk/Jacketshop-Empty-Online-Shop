@@ -1,1 +1,1 @@
-web: gunicorn puddle.wsgi
+web:gunicorn puddle.wsgi
