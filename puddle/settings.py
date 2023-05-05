@@ -23,7 +23,7 @@ DEBUG = False
 # DEBUG = False
 # heroku config:set DISABLE_COLLECTSTATIC=1
 
-ALLOWED_HOSTS = ['jacketshop.heroku.com', '*']
+ALLOWED_HOSTS = ['jacketshop.herokuapp.com']
 # ALLOWED_HOSTS = ['jacketshop.heroku.com']
 # ALLOWED_HOSTS = ['*'] jacketshop.heroku.com
 
