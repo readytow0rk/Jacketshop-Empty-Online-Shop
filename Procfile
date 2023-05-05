@@ -1,1 +1,1 @@
-web: gunicorn jacketshop.wsgi
+web: gunicorn puddle.wsgi
