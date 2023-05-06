@@ -63,7 +63,19 @@ User stories and Site Owner Stories were written to fit within the agile methodo
 6. As a User I can logout so that can save my data.
 
 ### Admin / Authorised User
-8. As the Site Admin I can create, read, update and delete a positions so that I can manage the my content.
-14. As the Site Admin I can see an all conversations.
-15. As the Site Admin i  can see an all users.
+1. As the Site Admin I can create, read, update and delete a positions so that I can manage the my content.
+2. As the Site Admin I can see an all conversations.
+3. As the Site Admin i can see an all users.
 
+### Structure
+The page is structured in a user-friendly and easy-to-learn way. Upon arriving at the website the user sees the home page, where the purpose of the site is explained. The website consists of 13 separate pages:
+1. Home page 
+2. Edit position page
+3. Contact page
+4. Login page
+5. Logout page
+6. Signup page
+7. 404 page
+
+
+- Built with Python and the Django framework with a database of a SQL for the deployed Heroku version(production).
