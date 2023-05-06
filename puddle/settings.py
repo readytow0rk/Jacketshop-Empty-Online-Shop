@@ -24,7 +24,7 @@ DEBUG = False
 # DEBUG = False
 # heroku config:set DISABLE_COLLECTSTATIC=1
 
-ALLOWED_HOSTS = ['jacketshop.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['jacketshop.herokuapp.com', '*']
 # ALLOWED_HOSTS = ['jacketshop.heroku.com']
 # ALLOWED_HOSTS = ['*'] jacketshop.heroku.com
 
@@ -84,16 +84,16 @@ WSGI_APPLICATION = 'puddle.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-     'default': dj_database_url.parse(os.environ.get("postgres://kzpprqfi:s5ydi5P6J-ehCSe6voUlHKg8jVgPIsf7@horton.db.elephantsql.com/kzpprqfizpprqfi:s5ydi5P6J-ehCSe6voUlHKg8jVgPIsf7@horton.db.elephantsql.com/kzpprqfi"))
- }
+# DATABASES = {
+#      'default': dj_database_url.parse(os.environ.get("postgres://kzpprqfi:s5ydi5P6J-ehCSe6voUlHKg8jVgPIsf7@horton.db.elephantsql.com/kzpprqfizpprqfi:s5ydi5P6J-ehCSe6voUlHKg8jVgPIsf7@horton.db.elephantsql.com/kzpprqfi"))
+# }
 
-# # DATABASES = {
-# #     'default': {
-# #         'ENGINE': 'django.db.backends.sqlite3',
-# #         'NAME': BASE_DIR / 'db.sqlite3',
-# #     }
-# # }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
