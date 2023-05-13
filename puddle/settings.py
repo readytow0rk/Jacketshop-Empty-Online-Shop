@@ -20,7 +20,7 @@ SECRET_KEY = 'django-insecure-j4ippt+3h39u4ontllpc8a(5h&^god(7aicz#@q^sl_(w)2otp
 X_FRAME_OPTIONS = 'SAMEORIGIN'
  
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 # DEBUG = False
 # heroku config:set DISABLE_COLLECTSTATIC=1
 
