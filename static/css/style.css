@@ -2,6 +2,6 @@
     color: brown;
 }
 
-.bg-fixed{
-    background: url("/static/img/shop.jpg")
+#bg-fixed{
+    background-image: url("/static/img/shop.jpg")
 }
