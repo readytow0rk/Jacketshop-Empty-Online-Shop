@@ -22,7 +22,7 @@ SECRET_KEY = os.environ.get(
 X_FRAME_OPTIONS = 'SAMEORIGIN'
  
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 # DEBUG = False
 # heroku config:set DISABLE_COLLECTSTATIC=1
 
