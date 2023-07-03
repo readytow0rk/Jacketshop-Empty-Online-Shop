@@ -1,81 +1,94 @@
-# Jacketshop
+Jacket Shop
+Welcome to Jacket Shop, your ultimate destination for trendy jackets. Jacket Shop is an online platform built with Django, where users can browse a wide variety of jackets, connect with sellers, and make purchases. The platform incorporates technologies such as Tailwind CSS, Bootstrap, and Django to provide a seamless and visually appealing shopping experience.
 
-![Mockup image](static/img/am_I_responsive.png)
-<br>
-[Live webpage](https://jacketshop.herokuapp.com/) 
-<br>
-[Github Repository](https://github.com/readytow0rk/pp4-Jacketshop)
+Requirements
+The Jacket Shop project has been developed using the following libraries and technologies:
 
-This project is built as part of the Code Institute Full Stack Software Development course. This is the shop website.
-Everyone can go on website and contact a seller if you want buy anything.Every position on the website admin could add,edit and remove. On the shop user can chat with a seller as well
-<hr>
+asgiref==3.3.4
+cloudinary==1.25.0
+dj-database-url==0.5.0
+dj3-cloudinary-storage==0.0.5
+Django==3.2.3
+django-allauth==0.44.0
+django-crispy-forms==1.11.2
+django-summernote==0.8.11.6
+gunicorn==20.1.0
+oauthlib==3.1.1
+psycopg2==2.8.6
+PyJWT==2.1.0
+python3-openid==3.2.0
+pytz==2021.1
+requests-oauthlib==1.3.0
+sqlparse==0.4.1
+psycopg2-binary==2.9.6
+Installation
+To run Jacket Shop locally, follow the steps below:
 
-## Project Goals 
-This project is built as part of the Code Institute Full Stack Software Development course. This is the shop website. The main goal of this project is to give a user the ability to see all position and if he like it he can contact and chat with a seller on the website.  User can login/register as well. An admin can create, edit and delete positions on the shop.
+Clone the repository to your local machine:
 
-### User Goals 
-- See the positions
-- Chat with a seller
-- Login/register
+bash
+Copy code
+git clone <repository_url>
+Change to the project directory:
 
-### Site Owner Goals
-- Increase in the number of clients
-- Promote the shop
-- Provide a booking system for the possibility to book a legal consultation
-- Provide information about a every position
+bash
+Copy code
+cd jacket-shop
+Create a virtual environment (optional but recommended):
 
-##### Back to [top](#table-of-content)<hr>
+Copy code
+python3 -m venv venv
+Activate the virtual environment:
 
-## User Experience
+On macOS and Linux:
 
-### Target Audience
+bash
+Copy code
+source venv/bin/activate
+On Windows:
 
-The target audience of this website might be people, who got used to shopin online and looking fora new shop. 
+Copy code
+venv\Scripts\activate
+Install the required dependencies:
 
-### User Requirements and Expectations
-- A simple and intuitive navigation system
-- Quick and easy to use
-- Links and functions that work as expected
-- Good presentation and a visually appealing design regardless of screen size
-- Option for conatact and chat with a seller
-- Option to view, edit and delete your booked consultations
-- Accessibility
+Copy code
+pip install -r requirements.txt
+Set up the database:
 
-### User Stories and Site Owner Stories
+Copy code
+python manage.py migrate
+Run the development server:
 
-User stories and Site Owner Stories were written to fit within the agile methodology. They have the following criteria:
+Copy code
+python manage.py runserver
+Visit http://localhost:8000 in your web browser to access Jacket Shop.
 
-* title
-* clear description
-* acceptance criteria
-* tasks, when acceptance criteria alone weren't clear enough
-* story points
-* epic
-* priority (must have, should have, could have)
+Online Website
+To experience the live deployment of Jacket Shop, visit the following website:
 
-### Users
+https://jacketshop.onrender.com/
 
-1. As a first time user I can visit a website so that should help me understand what the site is about
-2. As a User I can use a navbar so that I can navigate the site.
-3. As a User I can view chat with a seller on an individual post so that I can read and continue a conversation.
-4. As a User I can like a post so that I can interact with the content
-5. As a User I can register an account so that gives me more options as conversation with a seller. Or if you admin add,edit and delete a positions.
-6. As a User I can logout so that can save my data.
+Features
+Jacket Shop offers the following features:
 
-### Admin / Authorised User
-1. As the Site Admin I can create, read, update and delete a positions so that I can manage the my content.
-2. As the Site Admin I can see an all conversations.
-3. As the Site Admin i can see an all users.
+Browse and search for a wide range of trendy jackets.
+User registration and authentication with Django Allauth.
+Connect with sellers by sending them messages and engage in real-time chat conversations within the website.
+Secure payment processing.
+User-friendly interface with Tailwind CSS and Bootstrap for an enhanced visual experience.
+Admin panel to manage inventory, add, remove, and edit product listings.
+Multiple sellers can work concurrently on the platform, providing a diverse selection of jackets.
+Deployment
+Jacket Shop is deployed using the following technologies:
 
-### Structure
-The page is structured in a user-friendly and easy-to-learn way. Upon arriving at the website the user sees the home page, where the purpose of the site is explained. The website consists of 13 separate pages:
-1. Home page 
-2. Edit position page
-3. Contact page
-4. Login page
-5. Logout page
-6. Signup page
-7. 404 page
+Hosting: Render (https://render.com/)
+Database: Postgres
+Image Storage: Cloudinary
+File Storage: Django Cloudinary Storage
+The live deployment can be accessed at https://jacketshop.onrender.com/.
 
+License
+This project is licensed under the MIT License. Feel free to modify and distribute it as you like.
 
-- Built with Python and the Django framework with a database of a SQL for the deployed Heroku version(production).
+Acknowledgements
+Jacket Shop utilizes the Django framework and integrates various technologies and libraries to provide a seamless and enjoyable online shopping experience. Special thanks to the contributors of the libraries and technologies used in this project.
